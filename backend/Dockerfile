@@ -16,4 +16,4 @@ EXPOSE 4000
 # Migrations run against DATABASE_URL on every container start (see
 # src/db.ts runMigrations), so no manual migration step or local DB
 # connection is needed to deploy this image.
-CMD ["node", "dist/index.js"]
+CMD ["node", "dist/src/index.js"]
