@@ -5,7 +5,7 @@
   "description": "tagalong backend: activities, RSVPs, invites, feature flags, realtime fanout",
   "main": "dist/src/index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json && mkdir -p dist/migrations && cp src/migrations/*.sql dist/migrations/",
+    "build": "tsc -p tsconfig.json && mkdir -p dist/src/migrations && cp src/migrations/*.sql dist/src/migrations/",
     "start": "node dist/src/index.js",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "test": "vitest run --pool=forks --poolOptions.forks.singleFork=true",
